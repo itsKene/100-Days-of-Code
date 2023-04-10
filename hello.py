@@ -8,4 +8,7 @@ def main():
         print(f"Hello{name}, Oops, the challenge would have been fun")
     else:
         print("invalid input, cheers!")
+
+main()
+
     
