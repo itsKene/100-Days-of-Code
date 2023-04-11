@@ -7,11 +7,11 @@ def get_info():
     check = input("Do you accept the '100 days of code' challenge? (y/n)\n ").lower()
     return name, check
 
-def challenge(name, check):
-    if check == 'y':
-        return f"Hello {name}, Thanks for accepting this challenge"
-    elif check == 'n':
-        return f"Hello {name}, Oops, the challenge would have been fun"
+def challenge(check):
+    if check[1] == 'y':
+        return f"Hello {check[0]}, Thanks for accepting this challenge"
+    elif check[1] == 'n':
+        return f"Hello {check[0]}, Oops, the challenge would have been fun"
     else:
         return "invalid input, cheers!"
 
