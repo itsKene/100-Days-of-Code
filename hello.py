@@ -1,13 +1,19 @@
 def main():
-    name = input("What's your name? ")
-    check = input("Do you accept the '100 days of code' challenge? (y/n) ").lower()
+    print(challenge(get_info()))
+    
 
+def get_info():
+    name = input("What's your name? ")
+    check = input("Do you accept the '100 days of code' challenge? (y/n)\n ").lower()
+    return name, check
+
+def challenge(name, check):
     if check == 'y':
-        print(f"Hello {name}, Thanks for accepting this challenge")
+        return f"Hello {name}, Thanks for accepting this challenge"
     elif check == 'n':
-        print(f"Hello {name}, Oops, the challenge would have been fun")
+        return f"Hello {name}, Oops, the challenge would have been fun"
     else:
-        print("invalid input, cheers!")
+        return "invalid input, cheers!"
 
 main()
 
